@@ -2,7 +2,7 @@ name: Build and Deploy React App to GitHub Pages
 on:
   push:
     branches: [ master ]
-  jobs:
+jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
