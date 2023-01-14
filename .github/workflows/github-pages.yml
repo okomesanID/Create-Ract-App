@@ -18,7 +18,7 @@ jobs:
         run: npm run test
 
       - name: Deploy
-        run: -|
+        run: |
           git config --global user.name 'okomesan'
           git config --global user.email '103940417+okomesanID@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{github.repository}}
